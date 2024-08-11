@@ -1,0 +1,535 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.content1 h2{
+ font-family: "Amatic SC", sans-serif;
+ font-weight: 400;
+ font-size: 65px;
+}
+.section1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.logo span{
+    color: rgb(255, 48, 91);
+}
+.logo{
+    
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI";
+    font-size: 30px;
+    margin-left: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;  /* Add some padding to give it some space from the edges */
+    color: black;  /* You can style the color and other properties as needed */
+    font-size: 24px;  /* Adjust the font size as needed */
+    font-weight: bold;
+    margin-top: 20px;
+}
+button{
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /
+}
+button:hover{
+    color: rgba(255, 0, 0, 0.589);
+    transform: scale(1.05); /* Slightly increase the size */
+}
+#id:hover{
+    color: red;
+
+    transition-duration: 0.9s;
+
+}
+ a {
+    text-decoration: none;
+    color: grey;
+    padding-bottom: 5px; /* Adjust as needed */
+    border-bottom: 2px solid transparent; /* Start with a transparent border */
+    transition: border-color 0.3s;
+}
+.navbar li a:hover{
+    color: black;
+    border-bottom: 2px solid red;
+    transition: border-color 0.3s;
+
+}
+.navbar{
+     background-color: rgba(0, 0, 0, 0.2); 
+   display: flex;
+   justify-content: center;
+       padding: 20px;
+        position: fixed;
+       left: 0;
+       top: 0;
+       right: 0; 
+   
+     
+   }
+
+   .section1 .navbar input{
+     display: none; 
+   }
+   .section1 .navbar label{
+    position: absolute;
+    right: 0;
+    margin-right: 200px;
+    text-align: center;
+   }
+   body:has(input:checked) .section1,.section2,.section4,.section6,.contact,.container{
+     background-color: #333; 
+   }
+   body:has(input:checked) .container input,textarea,.contact-item,.contact-section,.section4 {
+    background-color: #333;
+   }
+   .logo{
+    
+    align-self: flex-start;
+    color: black;
+   }
+
+   #a{
+    color: black;
+    text-decoration: dashed;
+    border-bottom: 2px solid red;
+   }
+   .navbar ul li{
+    display: inline;
+
+    padding: 20px;
+    font-size: 23px;
+   
+ 
+   }
+   a{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.384) ;
+    
+}
+
+.content1{
+    margin-top: 10px;
+    margin-left: 200px;
+  
+}
+.content1 button{
+    background-color :rgb(207, 18, 18);
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    border-bottom-left-radius: 896px;
+    border-bottom-right-radius: 896px;
+    border-right-width: 2px;
+    border-top-left-radius :896px;
+border-top-right-radius: 896px;
+border-top-width: 2px;
+color: aliceblue;
+border: none;
+}
+#id{
+ display: inline;
+ margin-left: 10px;
+ font-size: 20px;
+}
+#id i{
+  color: red;
+}
+.image1{
+    display: flex;
+    width: 50%;
+ justify-content: flex-end;
+
+ 
+}
+.content1 .image1 img{
+align-self: flex-end;
+
+}
+/* section2 */
+.section2{
+  height: 800px; 
+    text-align: center;
+}
+.section2 h3{
+    font-family: "Amatic SC", sans-serif;
+    font-size :50px;
+}
+.section2 span{
+    color: rgb(206, 18, 18);
+}
+.content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  width: 100%;
+}
+.content-2{
+    width: 30%;
+    padding-top: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+  
+   
+}
+.content-2:hover{
+     transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.content-2 img{
+    padding-right: 30px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.tittle{
+    text-align: center;
+
+}
+.tittle p{
+    font-family: "Amatic SC", sans-serif;
+    font-size :50px;
+
+}
+.tittle span{
+    color: rgb(206, 18, 18);
+}
+.gallary{
+    background-color: #eee;
+}
+.gallary .item img{
+  width: 100%;
+}
+.item{
+    position: relative;
+    overflow: hidden;
+}
+.layer{
+    position:absolute;
+    top: 120%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:rgba(0,0,0,0.8);
+    color: #eee;
+    width: 100%;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition: all 0.5s;
+
+} 
+.gallary .item:hover .layer{
+    top: 0;
+
+}
+.gallary-container{
+    display: grid;
+    grid-template-areas: 
+    "pizza steaks burger"
+     "pizza steaks burger"
+     "pizza steaks burger"
+    "pizza-slice steaks chicken"
+     "pizza-slice steaks kofta"
+     "pizza-slice steaks kofta"
+      "pizza-slice steaks kofta"
+   "pizza-slice omllet kofta"
+    "pizza-slice omllet kofta"
+    ". omllet kofta"
+     ". omllet ."
+    ;
+    width: 90%;
+}
+.gallary-container{
+ 
+    margin-right: 20px;
+}
+
+.item{
+    margin-left: 100px;
+}
+.pizza{
+    grid-area: pizza;
+}
+.pizza-slice {
+    grid-area: pizza-slice ;
+}
+.steaks{
+    grid-area: steaks;
+}
+.burger{
+    grid-area: burger;
+}
+.kofta{
+    grid-area: kofta;
+}
+.chicken{
+    grid-area:  chicken;
+}
+.omllet{
+    grid-area: omllet;
+}
+
+/* section 4 */
+
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 70%;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+.contact-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.contact-item .icon {
+    font-size: 24px;
+    color: #d32f2f;
+    margin-right: 20px;
+}
+
+.contact-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.contact-item p strong {
+    color: #d32f2f;
+}
+.section4{
+    text-align: center;
+    margin-top: 20px;
+}
+.section4 p{
+    color: rgba(0, 0, 0, 0.315);
+}
+.section4 h6{
+    font-family: "Amatic SC", sans-serif;
+    font-size :50px;
+    margin-bottom: 20px;
+}
+
+.section4 span{
+    color: #d32f2f; 
+}
+form{
+
+    width: 70%;
+     text-align: center; 
+    margin: auto;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+form .your_name{
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+.your_name input{
+    width: 100%;
+    height: 50px;
+    border: 1px #ccc solid;
+    padding: 10px 20px;
+}
+form .subject{
+    width: 100%;
+ 
+}
+.subject input{
+    width: 100%;
+    height: 50px;
+    border: 1px #ccc solid;
+    padding: 10px 
+}
+
+form input:focus{
+    outline: 1px solid red;
+}
+button{
+   background-color: rgb(206, 18, 18);
+   color: #f9f9f9;
+   height: 40px;
+   width: 150px;
+   border: none;
+   border-radius: 10px;
+   margin-top: 10px;
+}
+textarea{
+    margin-top: 10px;
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+ 
+}
+/* section 6 */
+.section6{
+    background-color: black;
+    display: flex;
+}
+.starter{
+    margin-left: 50px;
+    width: 33%;
+    color: white;
+   
+   
+}
+#m{
+    font-size: 30px;
+}
+#s{
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+.logos i{
+    margin: 20px;
+}
+.second{
+    color: white;
+}
+.second{
+    width: 33%;
+}
+.logo2{
+ float: left;
+ margin-right:30px ;
+}
+#q{
+    font-size: 20px;
+}
+#su{
+    margin-top: 10px;
+    font-size: 20px;
+    font: bolder;
+    margin-bottom: 10px;
+    
+    font-family :Inter, sans-serif;
+}
+.third{
+    color: #f9f9f9;
+    width: 33%;
+}
+.third p{
+    margin-top: 10px;
+}
+#th{
+    font-size: 20px;
+}
+
+.third i{
+    color: #d32f2f;
+}
+@media (max-width:870px){
+    .gallary-container{
+        grid-template-areas: 
+        "pizza steaks "
+          "pizza steaks "
+         " burger steaks "
+         "pizza-slice  steaks "
+          "pizza-slice  chicken "
+               "pizza-slice  chicken "
+           "pizza-slice kofta "
+            "pizza-slice kofta "
+              " omllet kofta "
+                " omllet ."
+  
+        ;
+    }
+}
+@media (max-width:740px){
+    .gallary-container{
+        grid-template-areas: 
+        "pizza"
+          "burger"
+         " pizza-slice"
+            " pizza-slice"
+               " pizza-slice"
+                " omllet"
+         "steaks"
+          "steaks"
+           "steaks"
+           "chicken"
+              "kofta "
+               
+  
+        ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media */
+
+
+
+
+
+
+
+
+
+
